@@ -1,16 +1,24 @@
-import React from 'react';
-const HeaderLeft = () =>{
-    return(
-        <div className="header-left">
-          <a id="menuMain" href="" className="burger-menu"><i className='fas fa-bars'></i></a>
-          <a id="menuBack" href="" className="burger-menu d-none"><i className="fas fa-arrow-left"></i></a>
+import React from "react";
+import * as Icon from "react-feather";
+const HeaderLeft = () => {
+  return (
+    <div className="header-left">
+      <a id="menuMain" href="" className="burger-menu">
+        <Icon.Menu />
+      </a>
+      <a id="menuBack" href="" className="burger-menu d-none">
+        <Icon.ArrowLeft />
+      </a>
 
-          <div className="header-search">
-            <i className="fas fa-search"></i>
-            <input type="search" className="form-control" placeholder="Search for conversations"/>
-          </div>
-        </div>
-
-    )
-}
+      <div className="header-search">
+        <Icon.Search />
+        <input
+          type="search"
+          className="form-control"
+          placeholder="Search for conversations"
+        />
+      </div>
+    </div>
+  );
+};
 export default HeaderLeft;

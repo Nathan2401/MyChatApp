@@ -1,4 +1,5 @@
 import React from 'react';
+import * as Icon from 'react-feather';
 
 const ChatSideBar = () =>{
     return(
@@ -6,8 +7,8 @@ const ChatSideBar = () =>{
             <div className="chat-sidebar-header">
               <h6 class="tx-14 tx-color-01 mg-b-0">Recent Conversations</h6>
               <div>
-                <a href="" data-toggle="tooltip" title="New Conversation"><i className="fas fa-user-plus"></i></a>
-                <a href="" data-toggle="tooltip" title="Options"><i className='fas fa-ellipsis-v'></i></a>
+                <a href="" data-toggle="tooltip" title="New Conversation"><Icon.UserPlus/></a>
+                <a href="" data-toggle="tooltip" title="Options"><Icon.MoreVertical/></a>
               </div>
             </div>
             <div className="chat-sidebar-body">
@@ -144,8 +145,8 @@ const ChatSideBar = () =>{
               <div className="avatar avatar-sm avatar-online"><img src="https://via.placeholder.com/500/637382/fff" className="rounded-circle" alt=""/></div>
               <h6 className="chat-loggeduser">Louise Kate <span>(Me)</span></h6>
               <div>
-                <a href="" data-toggle="tooltip" title="Enable Mic"><i data-feather="mic"></i></a>
-                <a href="" data-toggle="tooltip" title="Settings"><i data-feather="settings"></i></a>
+                <a href="" data-toggle="tooltip" title="Enable Mic"><Icon.Mic/></a>
+                <a href="" data-toggle="tooltip" title="Settings"><Icon.Settings/></a>
               </div>
             </div>
           </div>

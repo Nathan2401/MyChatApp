@@ -1,12 +1,13 @@
 import React from 'react';
+import * as Icon from 'react-feather';
  const RightNotification = () =>{
      return(
         <div className="dropdown dropdown-notification">
-        <a href="" className="dropdown-link new" data-toggle="dropdown"><i className="far fa-bell"></i></a>
+        <a href="" className="dropdown-link new" data-toggle="dropdown"><Icon.Bell/></a>
         <div className="dropdown-menu dropdown-menu-right">
           <div className="dropdown-menu-header">
             <h6>Notifications</h6>
-            <a href=""><i className='fas fa-ellipsis-v'></i></a>
+            <a href=""><Icon.MoreVertical/></a>
           </div>
           <div className="dropdown-menu-body">
             <a href="" className="dropdown-item">

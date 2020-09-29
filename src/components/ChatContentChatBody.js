@@ -1,4 +1,5 @@
 import React from 'react';
+import * as Icon from 'react-feather';
 import MessageBodyContent from './MessageBodyContent';
 
 class ChatContentChatBody extends React.Component{
@@ -25,10 +26,10 @@ class ChatContentChatBody extends React.Component{
         <h6 className="tx-14 tx-color-01 mg-b-0 mg-l-10">George Winslett</h6>
 
         <div className="chat-body-options">
-          <a href="" data-toggle="tooltip" title="Search messages"><i className='fas fa-search'></i></a>
-          <a href="" data-toggle="tooltip" title="Call"><i className="fas fa-phone-alt"></i></a>
-          <a href="" data-toggle="tooltip" title="Video Call"><i className='fas fa-video'></i></a>
-          <a href="" data-toggle="tooltip" title="Info"><i className='fas fa-info-circle'></i></a>
+          <a href="" data-toggle="tooltip" title="Search messages"><Icon.Search/></a>
+          <a href="" data-toggle="tooltip" title="Call"><Icon.Phone/></a>
+          <a href="" data-toggle="tooltip" title="Video Call"><Icon.Video/></a>
+          <a href="" data-toggle="tooltip" title="Info"><Icon.Info/></a>
         </div>
       </div>
       
@@ -39,10 +40,10 @@ class ChatContentChatBody extends React.Component{
       
 
       <div className="chat-body-footer">
-        <div classname="chat-body-options">
-          <a href="" data-toggle="tooltip" title="Add Image"><i className='far fa-image'></i></a>
-          <a href="" data-toggle="tooltip" title="Add Gift"><i className='fas fa-gift'></i></a>
-          <a href="" data-toggle="tooltip" title="Add Emoticon"><i className='fas fa-smile'></i></a>
+        <div className="chat-body-options">
+          <a href="" data-toggle="tooltip" title="Add Image"><Icon.Image/>></a>
+          <a href="" data-toggle="tooltip" title="Add Gift"><Icon.Gift/></a>
+          <a href="" data-toggle="tooltip" title="Add Emoticon"><Icon.Smile/></a>
         </div>
         <div className="form-group">
           <form onSubmit={this.onSearchSubmit}>
@@ -50,7 +51,7 @@ class ChatContentChatBody extends React.Component{
           </form>
           
         </div>
-        <button className="btn btn-icon"><i className="far fa-paper-plane"></i></button>
+        <button className="btn btn-icon"><Icon.Send/></button>
       </div>
     </div>
   )
